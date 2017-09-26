@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+body {margin: 0;}
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.topnav li a:hover {background-color: #111;}
+
+ul.topnav li.right {float: right;}
+
+@media screen and (max-width: 600px){
+    ul.topnav li.right,
+    ul.topnav li {float: none;}
+}
+</style>
+</head>
+<body>
+
+<div>
+  <%= image_tag('logo.jpg', :style => "width:350px; height:170px; display:block; margin: 0 auto;") %>
+</div>
+
+<ul class="topnav">
+  <li><a href="/">Home</a></li>
+  <li><a href="/home/news">News</a></li>
+  <li><a href="/home/contact">Contact</a></li>
+  <li><a href="/home/about">About</a></li>
+</ul>
+
+<div style="padding:0 16px;">
+  <h1 style="margin-left:20%; margin-right:20%; text-align:center;">News</h1>
+  <p style="margin-left:30%; margin-right:30%; text-align:center;">This area is 100% editable and you can use it to say whatever you wish to your website visitors.
+    All the images are fully editable so you can add your own to customize each page.</p>
+</div>
+
+
+<div style="float:left; width: 30%; text-align:left; margin-left:20%">
+  <br>
+  <h1 style="text-align:center;">New1</h1>
+  Lorem ipsum dolor sit amet, tristique mattis fringilla vehicula, in vulputate velit wisi nulla vitae, adipiscing eu elit erat. Porttitor risus in nec sed vestibulum hac, arcu erat tortor varius et nam feugiat. A pretium fusce placerat felis a, lorem vel massa eget, eget mauris eget etiam, convallis viverra lacus bibendum rhoncus. Turpis est neque. Augue orci at venenatis morbi elementum, lectus convallis diam urna ac blandit, wisi consequat enim
+</div>
+
+<div style="float:right; width: 30%; text-align:left; margin-right:20%">
+  <br>
+  <h1 style="text-align:center;">News2</h1>
+Lorem ipsum dolor sit amet, tristique mattis fringilla vehicula, in vulputate velit wisi nulla vitae, adipiscing eu elit erat. Porttitor risus in nec sed vestibulum hac, arcu erat tortor varius et nam feugiat. A pretium fusce placerat felis a, lorem vel massa eget, eget mauris eget etiam, convallis viverra lacus bibendum rhoncus. Turpis est neque. Augue orci at venenatis morbi elementum, lectus convallis diam urna ac blandit, wisi consequat enim
+</div>
+
+
+</body>
+</html>

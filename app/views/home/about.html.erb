@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+body {margin: 0;}
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.topnav li a:hover {background-color: #111;}
+
+ul.topnav li.right {float: right;}
+
+@media screen and (max-width: 600px){
+    ul.topnav li.right,
+    ul.topnav li {float: none;}
+}
+</style>
+</head>
+<body>
+
+<div>
+    <%= image_tag('logo.jpg', :style => "width:350px; height:170px; display:block; margin: 0 auto;") %>
+</div>
+
+<ul class="topnav">
+  <li><a href="/">Home</a></li>
+  <li><a href="/home/news">News</a></li>
+  <li><a href="/home/contact">Contact</a></li>
+  <li><a href="/home/about">About</a></li>
+</ul>
+
+<div style="float:left; width: 30%; text-align:left; margin-left:20%">
+  <br><br><br>
+  <%= image_tag('mechanic.jpg', :style => "width:400px; height:300px;") %>
+</div>
+
+<br><br><br>
+<div style="float:right; width: 30%; text-align:left; margin-right:20%">
+  What you write here is totally up to you, there is no right or wrong way to complete your 'About Us' page. <br><br>We advise making your language friendly and approachable, while being informative and professional.
+  You should also consider adding key information such as:<br><br>
+  - Areas of your business<br>
+  - How many years experience you have<br>
+  - Your qualifications<br>
+  - Your contact details<br>
+  - Your policy for services<br>
+  - Your policy on repairs<br>
+  - Any additional services you offer<br>
+</div>
+
+  <div style="text-align:justify; float: right;" >
+  	<div style="text-align:left;">
+
+    </div>
+  </div>
+
+</body>
+</html>
+
+
+<script>
+var target = $('nav').offset().top;
+
+$(window).scroll(function() {
+    if ($(window).scrollTop() > target) {
+        $('nav').addClass('sticky');
+    } else {
+        $('nav').removeClass('sticky');
+    }
+});
+</script>
